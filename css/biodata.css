@@ -1,0 +1,18 @@
+#biodata-saya{
+  width: 300px;
+  height: 400px;
+  border-color: black;
+  border-style: solid;
+  padding:10px 10px 10px 10px ;
+  margin:0 auto ;
+}
+
+p{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h1{
+  text-align: center;
+}
