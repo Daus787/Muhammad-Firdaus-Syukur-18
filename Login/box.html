@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="box.css">
+    <title>Login</title>
+  </head>
+  <body>
+    <section>
+      <div class="form-box">
+        <div class="form-value">
+          <form action="">
+            <h2>Login</h2>
+            <div class="inputbox">
+              <input type="text" id="username" required />
+              <label for="">Username</label>
+            </div>
+            <div class="inputbox">
+              <input type="password" id="password" required />
+              <label for="" >Password </label>
+            </div>
+            <div class="forget">
+              <label for="">
+                <p>Forget <a href="#">Password?</a></p>
+              </label>
+            </div>
+            <button type="button" onclick="bukaDialog()">Log in</button>
+            <div class="register">
+              <p>Don't have a account? <a href="#">Register</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <p>Apakah anda yakin ingin login?</p>
+        <button class="confirm" onclick="konfirmasiLogin()">Ya</button>
+        <button class="cancel" onclick="tutupDialog()">Tidak</button>
+      </div>
+    </div>
+
+    <div class="modal" id="modalLogin">
+        <p>Sedang login...</p>
+        <button class="confirm" onclick="tutupDialogLogin()">Oke</button>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>
